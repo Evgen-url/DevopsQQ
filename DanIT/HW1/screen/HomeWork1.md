@@ -1,2 +1,3 @@
 HW #1
-![Image alt](https://ibb.co/F419LxS)
+![screen](https://ibb.co/F419LxS)
+![screen](https://imgur.com/FDPVeB0)
