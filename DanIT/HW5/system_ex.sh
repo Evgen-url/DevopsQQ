@@ -13,7 +13,7 @@ while true; do
             echo "Renamed: $file -> $base.back"
         fi
     done
-    sleep 2 # Check every 2 seconds
+    sleep 2 
 done
 
 
