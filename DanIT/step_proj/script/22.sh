@@ -50,10 +50,10 @@ Vagrant.configure("2") do |config|
                 sudo apt install -y maven
                         sudo apt install -y openjdk-11-jdk
                         sudo adduser --disabled-password --gecos "" appuser
-                        git clone https://github.com/Pavlovskyi-Andrii/petclinyc.git
-                        sudo chown -R appuser:appuser /home/vagrant/petclinyc
+                        git clone https://github.com/Evgen-url/petClinic.git
+                        sudo chown -R appuser:appuser /home/vagrant
                         sudo -u appuser bash << EOF
-                        cd /home/vagrant/petclinyc/PetClinic
+                        cd /home/vagrant/petClinic/PetClinic
                         chmod +x mvnw
                         ./mvnw package
                         java -jar target/*.jar
