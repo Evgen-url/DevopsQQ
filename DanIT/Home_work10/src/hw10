@@ -1,0 +1,27 @@
+import random
+num = random.randint(1, 100)
+print(num)
+
+x = 0
+chislo = None
+while x < 5:
+    chislo = input("введите число от 1 до 100: ")
+    try:
+        chislo = int(chislo)
+        if num > chislo:
+            x = x + 1
+            print(f"меньше чем загаданое число. попыток {x}")
+
+        elif num < chislo:
+            x = x + 1
+            print(f"больше чем загаданое число. попыток {x}")
+        else:
+            print("Вы угадали")
+            print("Game over")
+            break
+
+    except ValueError:
+        print("Ошибка! введите целое число")
+    continue
+if x == 5 and num != chislo:
+        print(f"Вы проиграли, число было {num}")
